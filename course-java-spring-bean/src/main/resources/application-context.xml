@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="quest" class="com.rakovets.course.spring.example.bean.knights.SlayDragonQuest">
+        <property name="steps">
+            <list>
+                <value type="java.lang.String">Find dragon lair</value>
+                <value type="java.lang.String">Create trap</value>
+                <value type="java.lang.String">Slay dragon</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean class="com.rakovets.course.spring.example.bean.knights.BraveKnight">
+        <constructor-arg name="quest" ref="quest"/>
+        <property name="name" value="Fedor"/>
+    </bean>
+</beans>

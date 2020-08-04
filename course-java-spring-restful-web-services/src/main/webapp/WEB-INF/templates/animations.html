@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Title</title>
+    <script th:src="@{/static/js/jquery-3.2.1.min.js}"></script>
+    <script th:src="@{/static/js/animation-functions.js}"></script>
+</head>
+<body>
+<div id="content-holder">
+    <p id="animation-name">Здесь будет название мультфильма</p>
+</div>
+<button onclick="getSampleAnimationFromServer()">Загрузить мультфильм</button>
+<button onclick="appendToDiv()">Сгенерировать параграф</button>
+
+<form>
+    <label for="form-animation-name"></label>
+    <input type="text" id="form-animation-name">
+    <button type="button" onclick="sendDataToServer()">Сохранить мультфильм</button>
+</form>
+</body>
+</html>

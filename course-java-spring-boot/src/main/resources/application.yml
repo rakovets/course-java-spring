@@ -1,0 +1,17 @@
+server:
+  port: 9000
+spring:
+  datasource:
+    username: root
+    password: 1234
+    url: jdbc:mariadb://localhost:3306/course_java_spring_boot
+  jpa:
+    open-in-view:
+    hibernate:
+      ddl-auto: create
+  security:
+    user:
+      name: admin
+      password: 12345
+
+

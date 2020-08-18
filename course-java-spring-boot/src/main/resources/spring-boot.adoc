@@ -1,0 +1,17 @@
+= Spring Boot
+
+== Task 1
+
+Создать *Spring Boot* приложение для хранения текстовых сообщений с использованием *Spring Data* репозиториев и *Rest API*.
+
+== Task 2
+
+Подключить  *devtools* и *actuator*
+
+== Task 3
+
+Создать REST endpoint `/messages/1`, для получения сообщения из Database и отдавать его пользователю в виде JSON.
+
+== Task 4
+
+Создать REST-endpoint `/message` для сохранения нового сообщения в Database.

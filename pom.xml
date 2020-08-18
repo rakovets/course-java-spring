@@ -8,6 +8,7 @@
     <modules>
         <module>course-java-spring-orm</module>
         <module>course-java-spring-webmvc</module>
+        <module>course-java-spring-restful-web-services</module>
     </modules>
     <packaging>pom</packaging>
     <name>Course "Java with Spring"</name>

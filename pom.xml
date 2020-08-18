@@ -10,6 +10,7 @@
 
     <modules>
         <module>bean</module>
+        <module>course-java-spring-bean-lifecycle</module>
     </modules>
 
     <properties>

@@ -5,31 +5,28 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <artifactId>course-java-spring</artifactId>
-        <groupId>by.rakovets.course</groupId>
+        <groupId>by.rakovets.course.java.spring</groupId>
+        <artifactId>spring-framework</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>course-java-spring-bean-lifecycle</artifactId>
-    <name>Theme: "Bean Lifecycle"</name>
+    <groupId>by.rakovets.course.java.spring.framework</groupId>
+    <artifactId>bean-lifecycle</artifactId>
+    <packaging>jar</packaging>
+    <name>Theme: "Spring Framework: Bean Lifecycle"</name>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
         </dependency>
-
-        <dependency>
-            <groupId>javax.annotation</groupId>
-            <artifactId>javax.annotation-api</artifactId>
-            <version>1.3.2</version>
-        </dependency>
-
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.12</version>
-            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.annotation</groupId>
+            <artifactId>jakarta.annotation-api</artifactId>
         </dependency>
     </dependencies>
 </project>

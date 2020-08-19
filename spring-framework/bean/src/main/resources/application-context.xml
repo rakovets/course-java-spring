@@ -5,7 +5,7 @@
         http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="quest" class="com.rakovets.course.spring.example.bean.knights.SlayDragonQuest">
+    <bean id="quest" class="com.rakovets.course.spring.framework.bean.knights.SlayDragonQuest">
         <property name="steps">
             <list>
                 <value type="java.lang.String">Find dragon lair</value>
@@ -15,7 +15,7 @@
         </property>
     </bean>
 
-    <bean class="com.rakovets.course.spring.example.bean.knights.BraveKnight">
+    <bean class="com.rakovets.course.spring.framework.bean.knights.BraveKnight">
         <constructor-arg name="quest" ref="quest"/>
         <property name="name" value="Fedor"/>
     </bean>

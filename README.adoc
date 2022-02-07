@@ -23,9 +23,11 @@ Course "Java with Spring"
 |Module|Theme|Documentation/Task
 |`spring-framework/bean`|*Spring Framework: Bean*|link:./[in progress]
 |`spring-framework/bean-lifecycle`|*Spring Framework: Bean lifecycle*|link:./[in progress]
+|`spring-framework/aop`|*Spring Framework: Aspect Oriented Programming*|link:./[in progress]
 |`spring-framework/orm`|*Spring Framework: Data Access*|link:./spring-framework/orm/src/main/resources/orm.adoc[orm.adoc]
 |`spring-framework/webmvc-view`|*Spring Framework: String Web MVC (View)*|link:./[in progress]
 |`spring-framework/webmvc-rest`|*Spring Framework: String Web MVC (REST)*|link:./[in progress]
+|`spring-data`|*Spring Data*|link:./[in progress]
 |`spring-security`|*Spring Security*|link:./spring-security/src/main/resources/spring-security.adoc[spring-security.adoc]
 |`spring-boot`|*Spring Security*|link:./spring-boot/src/main/resources/spring-boot.adoc[spring-boot.adoc]
 |===

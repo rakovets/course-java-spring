@@ -13,7 +13,7 @@
     <groupId>com.rakovets.course.java.spring.framework</groupId>
     <artifactId>orm</artifactId>
     <packaging>jar</packaging>
-    <name>Theme: "Spring Framework: Data Access</name>
+    <name>Theme: "Spring Framework: Data Access"</name>
 
     <dependencies>
         <dependency>

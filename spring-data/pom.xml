@@ -2,25 +2,20 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-
     <parent>
-        <groupId>by.rakovets.course.java</groupId>
         <artifactId>course-java-spring</artifactId>
+        <groupId>by.rakovets.course.java</groupId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
+    <modelVersion>4.0.0</modelVersion>
 
     <groupId>by.rakovets.course.java.spring</groupId>
-    <artifactId>spring-framework</artifactId>
-    <packaging>pom</packaging>
-    <name>Group: "Spring Framework"</name>
+    <artifactId>spring-data</artifactId>
+    <name>Theme: "Spring Data"</name>
 
-    <modules>
-        <module>bean</module>
-        <module>bean-lifecycle</module>
-        <module>aop</module>
-        <module>orm</module>
-        <module>webmvc-view</module>
-        <module>webmvc-rest</module>
-    </modules>
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
+
 </project>

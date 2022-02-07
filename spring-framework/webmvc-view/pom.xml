@@ -10,10 +10,10 @@
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.rakovets.course.java.spring.framework</groupId>
-    <artifactId>orm</artifactId>
-    <packaging>jar</packaging>
-    <name>Theme: "Spring Framework: Data Access</name>
+    <groupId>by.rakovets.course.java.spring.framework</groupId>
+    <artifactId>webmvc-view</artifactId>
+    <packaging>war</packaging>
+    <name>Theme: "Spring Framework: Spring Web MVC (View)"</name>
 
     <dependencies>
         <dependency>
@@ -33,20 +33,29 @@
             <artifactId>mariadb-java-client</artifactId>
         </dependency>
         <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.servlet</groupId>
+            <artifactId>jakarta.servlet-api</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-test</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-        </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.1</version>
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

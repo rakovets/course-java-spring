@@ -19,7 +19,7 @@
         <module>bean</module>
         <module>bean-lifecycle</module>
         <module>orm</module>
-        <module>webmvc</module>
-        <module>restful-web-services</module>
+        <module>webmvc-view</module>
+        <module>webmvc-rest</module>
     </modules>
 </project>

@@ -1,0 +1,22 @@
+version: '3.7'
+
+services:
+  postgres:
+    container_name: course-java-spring-postgres-container
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: ${POSTGRES_DATABASE:-course_java_spring}
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-12345678}
+      PGDATA: /var/lib/postgresql/data/pgdata
+    ports:
+      - '5432:5432'
+    volumes:
+    - './.db/postgresql/data:/var/lib/postgresql/data'
+    networks:
+      - inner
+
+networks:
+  inner:
+    name: course-java-spring-network
+    driver: bridge

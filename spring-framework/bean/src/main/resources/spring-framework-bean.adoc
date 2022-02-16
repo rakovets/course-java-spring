@@ -1,0 +1,42 @@
+= Spring Framework: Bean
+
+== Specification of task 1
+
+Создать класс `User` со следующими полями:
+
+* `firstName`
+* `lastName`
+* `email`
+* `username`
+* `password`
+
+== Specification of task 2
+
+Создать интерфейс `UserDao`, который описывает следующие действия:
+
+* поиск пользователя по `email`
+* поиск пользователя по `username`
+
+== Specification of task 3
+
+Создать интерфейс `UserService`, который описывает следующие действия:
+
+* поиск пользователя по `email`
+* поиск пользователя по `username`
+
+== Specification of task 4
+
+* Реализовать интерфейс `UserDao`, где данные хранились бы в RAM (т.е. использовать какую-либо collection).
+* Инициализировать какими-либо данными хранилище пользователей.
+
+== Specification of task 5
+
+* Реализовать интерфейс `UserService`, где он использует реализацию интерфейса `UserDao` для своих операций.
+
+== Specification of task 6
+
+Реализовать управление объектами с помощью Spring:
+
+* xml-based configuration
+* annotation-based configuration
+* java configuration

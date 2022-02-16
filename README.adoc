@@ -21,7 +21,7 @@ Course "Java with Spring"
 [options="header",cols="2,3,1"]
 |===
 |Module|Theme|Documentation/Task
-|`spring-framework/bean`|*Spring Framework: Bean*|link:./[in progress]
+|`spring-framework/bean`|*Spring Framework: Bean*|link:./spring-framework/bean/src/main/resources/spring-framework-bean.adoc[spring-framework-bean.adoc]
 |`spring-framework/bean-lifecycle`|*Spring Framework: Bean lifecycle*|link:./[in progress]
 |`spring-framework/aop`|*Spring Framework: Aspect Oriented Programming*|link:./[in progress]
 |`spring-framework/orm`|*Spring Framework: Data Access*|link:./spring-framework/orm/src/main/resources/orm.adoc[orm.adoc]

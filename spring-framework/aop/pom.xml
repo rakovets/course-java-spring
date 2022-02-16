@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.rakovets.course.java.spring.framework</groupId>
+    <groupId>by.rakovets.course.java.spring.framework</groupId>
     <artifactId>aop</artifactId>
     <packaging>jar</packaging>
     <name>Theme: "Spring Framework: Aspect Oriented Programming"</name>

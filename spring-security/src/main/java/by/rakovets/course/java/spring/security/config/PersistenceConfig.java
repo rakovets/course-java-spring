@@ -16,8 +16,8 @@ import java.util.Properties;
 
 @Configuration
 @ComponentScan(basePackages = {
-        "com.rakovets.course.java.spring.security.dal.dao",
-        "com.rakovets.course.java.spring.security.service"})
+        "by.rakovets.course.java.spring.security.dal.dao",
+        "by.rakovets.course.java.spring.security.service"})
 @PropertySource("classpath:database.properties")
 @EnableTransactionManagement
 public class PersistenceConfig {
@@ -53,7 +53,7 @@ public class PersistenceConfig {
     public LocalSessionFactoryBean sessionFactory() {
         LocalSessionFactoryBean localSessionFactoryBean = new LocalSessionFactoryBean();
         localSessionFactoryBean.setDataSource(dataSource());
-        localSessionFactoryBean.setPackagesToScan("com.rakovets.course.java.spring.security.dal.entity");
+        localSessionFactoryBean.setPackagesToScan("by.rakovets.course.java.spring.security.dal.entity");
         localSessionFactoryBean.setHibernateProperties(hibernateProperties());
         return localSessionFactoryBean;
     }

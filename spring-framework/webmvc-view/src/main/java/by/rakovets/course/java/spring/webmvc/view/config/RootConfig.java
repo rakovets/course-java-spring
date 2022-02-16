@@ -16,8 +16,8 @@ import java.util.Properties;
 
 @Configuration
 @ComponentScan(basePackages = {
-        "com.rakovets.course.java.spring.webmvc.dal.dao",
-        "com.rakovets.course.java.spring.webmvc.service"})
+        "by.rakovets.course.java.spring.webmvc.dal.dao",
+        "by.rakovets.course.java.spring.webmvc.service"})
 @PropertySource("classpath:database.properties")
 @EnableTransactionManagement
 public class RootConfig {
@@ -54,7 +54,7 @@ public class RootConfig {
     public LocalSessionFactoryBean sessionFactory() {
         LocalSessionFactoryBean localSessionFactoryBean = new LocalSessionFactoryBean();
         localSessionFactoryBean.setDataSource(dataSource());
-        localSessionFactoryBean.setPackagesToScan("com.rakovets.course.java.spring.webmvc.dal.entity");
+        localSessionFactoryBean.setPackagesToScan("by.rakovets.course.java.spring.webmvc.dal.entity");
         localSessionFactoryBean.setHibernateProperties(hibernateProperties());
         return localSessionFactoryBean;
     }

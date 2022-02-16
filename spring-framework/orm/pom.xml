@@ -10,7 +10,7 @@
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.rakovets.course.java.spring.framework</groupId>
+    <groupId>by.rakovets.course.java.spring.framework</groupId>
     <artifactId>orm</artifactId>
     <packaging>jar</packaging>
     <name>Theme: "Spring Framework: Data Access"</name>

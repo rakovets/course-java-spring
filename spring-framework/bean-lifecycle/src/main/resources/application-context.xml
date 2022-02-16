@@ -13,6 +13,6 @@
     <bean class="by.rakovets.course.java.spring.framework.beanlifecycle.processor.InjectRandomGreetingAnnotationBeanPostProcessor"/>
 
     <context:annotation-config/>
-    <context:component-scan base-package="com.rakovets.course.java.spring.example.beanlifecycle"/>
+    <context:component-scan base-package="by.rakovets.course.java.spring.example.beanlifecycle"/>
     <context:property-placeholder location="classpath:database.properties"/>
 </beans>

@@ -9,7 +9,7 @@
         http://www.springframework.org/schema/tx
         http://www.springframework.org/schema/tx/spring-tx.xsd">
     <context:annotation-config/>
-    <context:component-scan base-package="com.rakovets.course.java.spring.orm"/>
+    <context:component-scan base-package="by.rakovets.course.java.spring.orm"/>
     <context:property-placeholder location="database.properties"/>
     <tx:annotation-driven/>
 
@@ -22,7 +22,7 @@
 
     <bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
-        <property name="packagesToScan" value="com.rakovets.course.java.spring.orm.dal.entity"/>
+        <property name="packagesToScan" value="by.rakovets.course.java.spring.orm.dal.entity"/>
         <property name="hibernateProperties">
             <props>
                 <prop key="hibernate.dialect">${hibernate.dialect}</prop>

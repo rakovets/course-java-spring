@@ -29,7 +29,7 @@ Course "Java with Spring"
 |`spring-framework/webmvc-rest`|*Spring Framework: String Web MVC (REST)*|link:./[in progress]
 |`spring-data`|*Spring Data*|link:./[in progress]
 |`spring-security`|*Spring Security*|link:./spring-security/src/main/resources/spring-security.adoc[spring-security.adoc]
-|`spring-boot`|*Spring Security*|link:./spring-boot/src/main/resources/spring-boot.adoc[spring-boot.adoc]
+|`spring-boot`|*Spring Boot*|link:./spring-boot/src/main/resources/spring-boot.adoc[spring-boot.adoc]
 |===
 
 == Code of Conduct

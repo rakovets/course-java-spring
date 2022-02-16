@@ -6,9 +6,12 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
     <context:annotation-config/>
-    <context:component-scan base-package="by.rakovets.course.spring.example.bean"/>
+    <context:component-scan base-package="by.rakovets.course.spring.framework.bean.example.annotationbased"/>
 
     <bean class="java.lang.String">
         <constructor-arg type="java.lang.String" value="Hello"/>
+    </bean>
+
+    <bean id="heroDao" class="by.rakovets.course.spring.framework.bean.example.annotationbased.dao.HeroDaoImplImproved">
     </bean>
 </beans>

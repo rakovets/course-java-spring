@@ -1,6 +1,6 @@
-package by.rakovets.course.spring.framework.bean.project.dao;
+package by.rakovets.course.spring.framework.bean.example.annotationbased.dao;
 
-import by.rakovets.course.spring.framework.bean.project.qualifiers.Improved;
+import by.rakovets.course.spring.framework.bean.example.annotationbased.qualifiers.Improved;
 import org.springframework.stereotype.Repository;
 
 

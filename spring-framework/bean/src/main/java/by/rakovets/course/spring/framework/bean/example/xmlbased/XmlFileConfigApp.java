@@ -1,7 +1,7 @@
-package by.rakovets.course.spring.framework.bean;
+package by.rakovets.course.spring.framework.bean.example.xmlbased;
 
-import by.rakovets.course.spring.framework.bean.knights.BraveKnight;
-import by.rakovets.course.spring.framework.bean.knights.Knight;
+import by.rakovets.course.spring.framework.bean.example.xmlbased.model.impl.BraveKnight;
+import by.rakovets.course.spring.framework.bean.example.xmlbased.model.Knight;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 

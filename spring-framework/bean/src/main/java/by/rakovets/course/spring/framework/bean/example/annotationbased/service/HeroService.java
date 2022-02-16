@@ -1,18 +1,18 @@
-package by.rakovets.course.spring.framework.bean.project.service;
+package by.rakovets.course.spring.framework.bean.example.annotationbased.service;
 
-import by.rakovets.course.spring.framework.bean.project.dao.HeroDao;
-import by.rakovets.course.spring.framework.bean.project.qualifiers.Generic;
+import by.rakovets.course.spring.framework.bean.example.annotationbased.dao.HeroDao;
+import by.rakovets.course.spring.framework.bean.example.annotationbased.qualifiers.Generic;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 
 @Service
 public class HeroService {
-    private HeroDao heroDao;
-    private String name;
+    private final HeroDao heroDao;
+    private final String name;
 
     @Autowired
-    public HeroService(@Generic HeroDao heroDao, String name) {
+    public HeroService(HeroDao heroDao, String name) {
         this.heroDao = heroDao;
         this.name = name;
     }

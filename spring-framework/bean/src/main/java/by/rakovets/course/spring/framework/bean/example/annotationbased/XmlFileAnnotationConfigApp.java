@@ -1,6 +1,6 @@
-package by.rakovets.course.spring.framework.bean;
+package by.rakovets.course.spring.framework.bean.example.annotationbased;
 
-import by.rakovets.course.spring.framework.bean.project.service.HeroService;
+import by.rakovets.course.spring.framework.bean.example.annotationbased.service.HeroService;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 

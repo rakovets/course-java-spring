@@ -1,15 +1,15 @@
-package by.rakovets.course.spring.framework.bean.project;
+package by.rakovets.course.spring.framework.bean.example.annotationbased;
 
-import by.rakovets.course.spring.framework.bean.project.dao.HeroDao;
-import by.rakovets.course.spring.framework.bean.project.service.HeroService;
-import by.rakovets.course.spring.framework.bean.project.dao.HeroDaoImplGeneric;
+import by.rakovets.course.spring.framework.bean.example.annotationbased.dao.HeroDao;
+import by.rakovets.course.spring.framework.bean.example.annotationbased.service.HeroService;
+import by.rakovets.course.spring.framework.bean.example.annotationbased.dao.HeroDaoImplGeneric;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 
 @Configuration
-@ComponentScan(basePackages = {"by.hector.project"})
+@ComponentScan
 public class Config {
     @Bean
     public String someString() {

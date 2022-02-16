@@ -1,8 +1,11 @@
-package by.rakovets.course.spring.framework.bean.knights;
+package by.rakovets.course.spring.framework.bean.example.xmlbased.model.impl;
 
+
+import by.rakovets.course.spring.framework.bean.example.xmlbased.model.Knight;
+import by.rakovets.course.spring.framework.bean.example.xmlbased.model.Quest;
 
 public class BraveKnight implements Knight {
-    private Quest quest;
+    private final Quest quest;
     private String name;
 
     public BraveKnight(Quest quest) {

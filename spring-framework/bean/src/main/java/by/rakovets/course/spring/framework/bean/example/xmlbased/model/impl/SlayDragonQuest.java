@@ -1,4 +1,6 @@
-package by.rakovets.course.spring.framework.bean.knights;
+package by.rakovets.course.spring.framework.bean.example.xmlbased.model.impl;
+
+import by.rakovets.course.spring.framework.bean.example.xmlbased.model.Quest;
 
 import java.util.List;
 

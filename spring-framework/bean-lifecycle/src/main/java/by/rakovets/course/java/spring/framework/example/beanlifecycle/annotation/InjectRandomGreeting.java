@@ -1,4 +1,6 @@
-package by.rakovets.course.java.spring.framework.beanlifecycle.annotation;
+package by.rakovets.course.java.spring.framework.example.beanlifecycle.annotation;
+
+import by.rakovets.course.java.spring.framework.example.beanlifecycle.model.Language;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

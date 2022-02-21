@@ -1,6 +1,6 @@
-package by.rakovets.course.java.spring.framework.beanlifecycle;
+package by.rakovets.course.java.spring.framework.example.beanlifecycle;
 
-import by.rakovets.course.java.spring.framework.beanlifecycle.service.HeroService;
+import by.rakovets.course.java.spring.framework.example.beanlifecycle.service.HeroService;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 

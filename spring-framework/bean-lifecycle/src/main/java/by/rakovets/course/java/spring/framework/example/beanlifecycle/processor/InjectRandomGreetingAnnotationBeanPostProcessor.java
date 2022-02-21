@@ -1,7 +1,7 @@
-package by.rakovets.course.java.spring.framework.beanlifecycle.processor;
+package by.rakovets.course.java.spring.framework.example.beanlifecycle.processor;
 
-import by.rakovets.course.java.spring.framework.beanlifecycle.annotation.InjectRandomGreeting;
-import by.rakovets.course.java.spring.framework.beanlifecycle.annotation.Language;
+import by.rakovets.course.java.spring.framework.example.beanlifecycle.annotation.InjectRandomGreeting;
+import by.rakovets.course.java.spring.framework.example.beanlifecycle.model.Language;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.util.ReflectionUtils;
@@ -21,7 +21,7 @@ public class InjectRandomGreetingAnnotationBeanPostProcessor implements BeanPost
         Class<?> beanClass = bean.getClass();
         Field[] declaredFields = beanClass.getDeclaredFields();
         for (Field declaredField : declaredFields) {
-            if(declaredField.isAnnotationPresent(InjectRandomGreeting.class)) {
+            if (declaredField.isAnnotationPresent(InjectRandomGreeting.class)) {
                 InjectRandomGreeting annotation = declaredField.getAnnotation(InjectRandomGreeting.class);
                 Language language = annotation.language();
                 List<String> greetings = language == Language.RU ? ruGreetings : enGreetings;

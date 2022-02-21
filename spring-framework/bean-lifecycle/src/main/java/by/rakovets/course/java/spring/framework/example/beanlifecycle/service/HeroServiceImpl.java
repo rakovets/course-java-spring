@@ -1,10 +1,10 @@
-package by.rakovets.course.java.spring.framework.beanlifecycle.service;
+package by.rakovets.course.java.spring.framework.example.beanlifecycle.service;
 
-import by.rakovets.course.java.spring.framework.beanlifecycle.annotation.InjectRandomGreeting;
-import by.rakovets.course.java.spring.framework.beanlifecycle.annotation.InjectRandomInt;
-import by.rakovets.course.java.spring.framework.beanlifecycle.annotation.Language;
-import by.rakovets.course.java.spring.framework.beanlifecycle.dao.HeroDao;
-import by.rakovets.course.java.spring.framework.beanlifecycle.annotation.Profiling;
+import by.rakovets.course.java.spring.framework.example.beanlifecycle.annotation.InjectRandomGreeting;
+import by.rakovets.course.java.spring.framework.example.beanlifecycle.annotation.InjectRandomInt;
+import by.rakovets.course.java.spring.framework.example.beanlifecycle.annotation.Profiling;
+import by.rakovets.course.java.spring.framework.example.beanlifecycle.dao.HeroDao;
+import by.rakovets.course.java.spring.framework.example.beanlifecycle.model.Language;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -47,7 +47,7 @@ public class HeroServiceImpl implements HeroService {
     private void logData() {
         System.out.println(number);
         for (int i = 0; i < number; i++) {
-            System.out.println("Логирую данные");
+            System.out.println("Custom logic");
         }
     }
 }

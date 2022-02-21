@@ -1,4 +1,4 @@
-package by.rakovets.course.java.spring.framework.beanlifecycle.dao;
+package by.rakovets.course.java.spring.framework.example.beanlifecycle.dao;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Profile;

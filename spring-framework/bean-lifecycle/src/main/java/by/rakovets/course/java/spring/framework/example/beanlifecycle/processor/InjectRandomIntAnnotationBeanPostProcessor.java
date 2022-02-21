@@ -1,6 +1,6 @@
-package by.rakovets.course.java.spring.framework.beanlifecycle.processor;
+package by.rakovets.course.java.spring.framework.example.beanlifecycle.processor;
 
-import by.rakovets.course.java.spring.framework.beanlifecycle.annotation.InjectRandomInt;
+import by.rakovets.course.java.spring.framework.example.beanlifecycle.annotation.InjectRandomInt;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.util.ReflectionUtils;

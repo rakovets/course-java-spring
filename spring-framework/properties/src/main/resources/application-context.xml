@@ -8,10 +8,7 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean class="by.rakovets.course.java.spring.framework.example.beanlifecycle.processor.InjectRandomIntAnnotationBeanPostProcessor"/>
-    <bean class="by.rakovets.course.java.spring.framework.example.beanlifecycle.processor.ProfilingAnnotationBeanPostProcessor"/>
-    <bean class="by.rakovets.course.java.spring.framework.example.beanlifecycle.processor.InjectRandomGreetingAnnotationBeanPostProcessor"/>
-
     <context:annotation-config/>
-    <context:component-scan base-package="by.rakovets.course.java.spring.framework.example.beanlifecycle"/>
+    <context:component-scan base-package="by.rakovets.course.java.spring.framework.example.properties"/>
+    <context:property-placeholder location="classpath:application.properties"/>
 </beans>

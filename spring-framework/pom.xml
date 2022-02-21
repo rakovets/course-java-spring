@@ -18,9 +18,10 @@
     <modules>
         <module>bean</module>
         <module>bean-lifecycle</module>
-        <module>aop</module>
+        <module>properties</module>
         <module>orm</module>
         <module>webmvc-view</module>
         <module>webmvc-rest</module>
+        <module>aop</module>
     </modules>
 </project>

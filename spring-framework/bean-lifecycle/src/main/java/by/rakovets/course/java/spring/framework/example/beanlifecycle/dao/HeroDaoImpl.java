@@ -1,14 +1,13 @@
 package by.rakovets.course.java.spring.framework.example.beanlifecycle.dao;
 
-import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Repository;
 
 
 @Repository
-@Profile("prod")
-public class HeroDaoProduction implements HeroDao {
+public class HeroDaoImpl implements HeroDao {
     @Override
     public String getNameById(Long id) {
-        return "Production hero";
+        System.out.println(this.getClass().getSimpleName());
+        return this.getClass().getSimpleName();
     }
 }

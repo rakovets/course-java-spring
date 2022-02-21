@@ -19,7 +19,7 @@
     </bean>
 
     <bean id="braveKnight" class="by.rakovets.course.spring.framework.bean.example.xmlbased.model.impl.BraveKnight">
-        <constructor-arg name="quest" ref="rescueDamselQuest"/>
+        <constructor-arg name="quest" ref="slayDragonQuest"/>
         <property name="name" value="Fedor"/>
     </bean>
 </beans>

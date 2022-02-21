@@ -1,6 +1,6 @@
-package by.rakovets.course.spring.framework.bean.example.annotationbased.service;
+package by.rakovets.course.spring.framework.bean.example.javabased.service;
 
-import by.rakovets.course.spring.framework.bean.example.annotationbased.dao.HeroDao;
+import by.rakovets.course.spring.framework.bean.example.javabased.dao.HeroDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

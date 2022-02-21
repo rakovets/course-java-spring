@@ -1,4 +1,4 @@
-package by.rakovets.course.spring.framework.bean.example.annotationbased.dao;
+package by.rakovets.course.spring.framework.bean.example.javabased.dao;
 
 import org.springframework.stereotype.Repository;
 

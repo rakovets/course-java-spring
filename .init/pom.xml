@@ -19,7 +19,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <log4j2.version>2.17.1</log4j2.version>
         <liquibase.version>4.6.2</liquibase.version>
-        <postgresql.version>42.3.0</postgresql.version>
+        <postgresql.version>42.3.3</postgresql.version>
         <mariadb.version>2.7.4</mariadb.version>
     </properties>
 

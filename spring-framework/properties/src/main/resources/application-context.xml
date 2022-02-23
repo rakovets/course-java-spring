@@ -10,5 +10,5 @@
 
     <context:annotation-config/>
     <context:component-scan base-package="by.rakovets.course.java.spring.framework.example.properties"/>
-    <context:property-placeholder location="classpath:application.properties"/>
+    <context:property-placeholder location="file:/home/rakovets/application.properties"/>
 </beans>

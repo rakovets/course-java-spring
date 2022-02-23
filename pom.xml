@@ -9,6 +9,7 @@
     <name>Course "Java with Spring"</name>
 
     <modules>
+        <module>.init</module>
         <module>spring-framework</module>
         <module>spring-data</module>
         <module>spring-security</module>
@@ -16,6 +17,7 @@
     </modules>
 
     <properties>
+        <java.version>11</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <springframework.version>5.3.15</springframework.version>
         <spring.security.version>5.6.1</spring.security.version>
@@ -87,7 +89,7 @@
             <dependency>
                 <groupId>org.postgresql</groupId>
                 <artifactId>postgresql</artifactId>
-                <version>42.3.1</version>
+                <version>42.3.3</version>
             </dependency>
             <dependency>
                 <groupId>jakarta.annotation</groupId>
@@ -145,15 +147,19 @@
         <pluginManagement>
             <plugins>
                 <plugin>
-                    <!-- IntelliJ IDEA Error when `mvn compile`:
-                    Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile
-                    (default-compile) on project course-java-spring: Fatal error compiling-->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>3.8.1</version>
                     <configuration>
-                        <source>11</source>
-                        <target>11</target>
+                        <source>${java.version}</source>
+                        <target>${java.version}</target>
+                        <annotationProcessorPaths>
+                            <path>
+                                <groupId>org.projectlombok</groupId>
+                                <artifactId>lombok</artifactId>
+                                <version>1.18.12</version>
+                            </path>
+                        </annotationProcessorPaths>
                     </configuration>
                 </plugin>
                 <plugin>

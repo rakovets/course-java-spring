@@ -1,28 +1,28 @@
 = Integration Spring with ORM
 
-== Task 1
+== Specification of task 1
 
 Создать проект, в котором произвести интеграцию *Spring* и *Hibernate*
 
-== Task 2
+== Specification of task 2
 
 В проект добавить общий `Dao` и его реализацию для сущности `Car` – автомобиля с полями:
 
 * `brand`
 * `model`
 
-== Task 3
+== Specification of task 3
 
-Написать тест для сохранения и получения `Car` по brand` и `model`, добавив соответствующие методы в _package_ dao
+Написать тест для сохранения и получения `Car` по brand` и `model`, добавив соответствующие методы в _package_ `dao`
 
-== Task 4
+== Specification of task 4
 
 Сконфигурировать `TransactionManager`
 
-== Task 5
+== Specification of task 5
 
 Добавить поддержку декларативных транзакций
 
-== Task 6
+== Specification of task 6
 
 Создать транзакционный сервис и протестировать его работу

@@ -5,7 +5,6 @@ import by.rakovets.course.java.spring.orm.service.KnightService;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class SpringOrmApp {
-
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context
                 = new ClassPathXmlApplicationContext("application-context.xml");

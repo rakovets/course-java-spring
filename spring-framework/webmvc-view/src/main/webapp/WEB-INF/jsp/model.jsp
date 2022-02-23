@@ -4,6 +4,6 @@
     <title>Model page</title>
 </head>
 <body>
-    ${user.name} : ${user.password} : ${randomNumber}
+${user.name} : ${user.password} : ${randomNumber}
 </body>
 </html>

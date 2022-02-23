@@ -1,7 +1,6 @@
 package by.rakovets.course.spring.framework.bean.example.annotationbased.service;
 
 import by.rakovets.course.spring.framework.bean.example.annotationbased.dao.HeroDao;
-import by.rakovets.course.spring.framework.bean.example.annotationbased.qualifiers.Generic;
 import org.springframework.stereotype.Service;
 
 

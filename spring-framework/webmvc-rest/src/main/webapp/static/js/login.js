@@ -8,8 +8,8 @@ function login() {
             username: username,
             password: password
         })
-    }).done(function(validationMessage) {
-       $("#validation-message").text(validationMessage.text);
-       // window.location(validationMessage.redirectUrl);
+    }).done(function (validationMessage) {
+        $("#validation-message").text(validationMessage.text);
+        // window.location(validationMessage.redirectUrl);
     });
 }

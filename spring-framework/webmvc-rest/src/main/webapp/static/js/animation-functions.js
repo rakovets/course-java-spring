@@ -1,7 +1,7 @@
 function getSampleAnimationFromServer() {
     $.ajax("animation", {
         "method": "GET"
-    }).done(function(response) {
+    }).done(function (response) {
         console.log(response);
         console.log(response.id);
         console.log(response.name);
@@ -20,7 +20,7 @@ function sendDataToServer() {
     var animationName = $("#form-animation-name").val();
     console.log(animationName);
     var requestObject = {
-      name: animationName
+        name: animationName
     };
     $.ajax("animation", {
         method: "POST",

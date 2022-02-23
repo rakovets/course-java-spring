@@ -1,7 +1,7 @@
 package by.rakovets.course.java.spring.webmvc.rest.controller;
 
-import by.rakovets.course.java.spring.webmvc.rest.dto.ValidationMessage;
 import by.rakovets.course.java.spring.webmvc.rest.dto.User;
+import by.rakovets.course.java.spring.webmvc.rest.dto.ValidationMessage;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
 import org.springframework.validation.Errors;

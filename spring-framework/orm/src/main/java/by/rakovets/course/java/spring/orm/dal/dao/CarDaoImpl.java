@@ -8,7 +8,6 @@ import java.util.List;
 
 @Repository
 public class CarDaoImpl extends BaseDaoImpl<Car> implements CarDao {
-
     @Override
     public Car findByBrandAndModel(String brand, String model) {
         List<Car> cars = getSessionFactory().getCurrentSession().createQuery(

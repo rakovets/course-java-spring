@@ -8,7 +8,6 @@ import java.util.List;
 
 @Repository
 public class KnightDaoImpl extends BaseDaoImpl<Knight> implements KnightDao {
-
     @Override
     public Knight findByName(String name) {
         List<Knight> knightList = getSessionFactory().getCurrentSession().createQuery(

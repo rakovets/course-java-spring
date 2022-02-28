@@ -10,9 +10,16 @@ public class SpringOrmApp {
                 = new ClassPathXmlApplicationContext("application-context.xml");
 
         KnightService service = context.getBean(KnightService.class);
+
         Knight knight = new Knight();
         knight.setName("Arthur");
+
+        Knight knight2 = new Knight();
+        knight2.setName("Arthur");
+
         service.save(knight);
+        service.save(knight2);
+
         Knight found = service.findByName("Arthur");
         System.out.println(found);
     }

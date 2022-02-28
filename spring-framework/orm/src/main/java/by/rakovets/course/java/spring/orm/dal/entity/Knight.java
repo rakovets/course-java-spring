@@ -12,7 +12,6 @@ import javax.persistence.Table;
 @Table(name = "knights")
 @ToString(callSuper = true)
 public class Knight extends BaseEntity {
-
     @Column(name = "name")
     @Getter
     @Setter

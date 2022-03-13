@@ -22,6 +22,7 @@
         <module>orm</module>
         <module>webmvc-view</module>
         <module>webmvc-rest</module>
+        <module>rest-client</module>
         <module>aop</module>
     </modules>
 </project>

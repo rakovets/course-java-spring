@@ -16,7 +16,9 @@ import java.util.List;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = {"by.rakovets.course.java.spring.restfulwebservices.controller"})
+@ComponentScan(basePackages = {
+        "by.rakovets.course.java.spring.webmvc.rest.controller"
+})
 @Import(value = {ThymeleafConfig.class})
 public class WebConfig implements WebMvcConfigurer {
     @Override

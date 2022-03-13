@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.time.LocalDate;
 
-@RestController
+@RestController // == @Controller + @ResponseBody
 @RequestMapping("animation")
 public class TestRestController {
     @GetMapping

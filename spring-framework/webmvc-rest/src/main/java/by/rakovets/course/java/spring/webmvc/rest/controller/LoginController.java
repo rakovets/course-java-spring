@@ -18,12 +18,12 @@ import javax.validation.Valid;
 public class LoginController {
     @GetMapping
     public String openLoginPage() {
-        return "login";
+        return "login"; // VIEW
     }
 
     @PostMapping
-    @ResponseBody
-    public ValidationMessage login(@Valid @RequestBody User user, Errors errors) {
+    @ResponseBody // JSON
+    public ValidationMessage login(@Valid @RequestBody User user, Errors errors) { // JSON
         if (StringUtils.isEmpty(user.getUsername())) {
             return new ValidationMessage("Username is not defined");
         }

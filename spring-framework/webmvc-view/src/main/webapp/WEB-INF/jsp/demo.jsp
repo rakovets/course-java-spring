@@ -4,6 +4,8 @@
     <title>Demo page</title>
 </head>
 <body>
-I'm alive!
+<div>
+    <p>id: ${id}</p>
+</div>
 </body>
 </html>

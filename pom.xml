@@ -19,9 +19,11 @@
     <properties>
         <java.version>11</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <springframework.version>5.3.15</springframework.version>
-        <spring.security.version>5.6.1</spring.security.version>
+        <springframework.version>5.3.16</springframework.version>
         <spring.boot.version>2.6.3</spring.boot.version>
+        <spring.data.version>2.6.2</spring.data.version>
+        <spring.security.version>5.6.1</spring.security.version>
+        <log4j2.version>2.17.2</log4j2.version>
     </properties>
 
     <dependencyManagement>
@@ -45,6 +47,11 @@
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-webflux</artifactId>
                 <version>${springframework.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.data</groupId>
+                <artifactId>spring-data-jpa</artifactId>
+                <version>${spring.data.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.security</groupId>
@@ -122,6 +129,11 @@
                 <version>3.0.15.RELEASE</version>
             </dependency>
             <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-core</artifactId>
+                <version>2.17.1</version>
+            </dependency>
+            <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-test</artifactId>
                 <version>${springframework.version}</version>
@@ -130,7 +142,7 @@
             <dependency>
                 <groupId>org.junit.jupiter</groupId>
                 <artifactId>junit-jupiter</artifactId>
-                <version>5.6.2</version>
+                <version>5.8.2</version>
                 <scope>test</scope>
             </dependency>
             <dependency>

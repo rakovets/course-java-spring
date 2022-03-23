@@ -3,6 +3,7 @@ package by.rakovets.course.java.spring.security.dal.entity;
 import lombok.Getter;
 import lombok.Setter;
 
+import javax.persistence.AttributeOverride;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
@@ -13,23 +14,20 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-@Table(name = "users")
-public class SystemUser extends BaseEntity {
+@Table(name = "user")
+@Getter
+@Setter
+@AttributeOverride(name = "id", column = @Column(name = "user_id"))
+public class User extends BaseEntity {
     @Column(name = "name")
-    @Getter
-    @Setter
     private String name;
 
     @Column(name = "password")
-    @Getter
-    @Setter
     private String password;
 
-    @JoinTable(name = "users_roles",
+    @JoinTable(name = "user_role_link",
             joinColumns = @JoinColumn(name = "user_id"),
             inverseJoinColumns = @JoinColumn(name = "role_id"))
     @ManyToMany
-    @Getter
-    @Setter
     private Set<Role> roles = new HashSet<>();
 }

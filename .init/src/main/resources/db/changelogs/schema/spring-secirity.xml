@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+      https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+    <changeSet id="schema.spring-security.1647750693" author="dmitryrakovets@gmail.com">
+        <createTable schemaName="spring_security" tableName="user">
+            <column name="user_id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true"
+                             primaryKeyName="pk_user"
+                             unique="true"
+                             nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(64)">
+                <constraints unique="true"
+                             nullable="false"/>
+            </column>
+            <column name="password" type="VARCHAR(64)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+        <rollback>
+            <dropTable schemaName="spring_security" tableName="user" cascadeConstraints="true"/>
+        </rollback>
+    </changeSet>
+    <changeSet id="schema.spring-security.1647750703" author="dmitryrakovets@gmail.com">
+        <createTable schemaName="spring_security" tableName="role">
+            <column name="role_id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true"
+                             primaryKeyName="pk_role"
+                             unique="true"
+                             nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(64)">
+                <constraints unique="true"
+                             nullable="false"/>
+            </column>
+        </createTable>
+        <rollback>
+            <dropTable schemaName="spring_security" tableName="role" cascadeConstraints="true"/>
+        </rollback>
+    </changeSet>
+    <changeSet id="schema.spring-security.1647750724" author="dmitryrakovets@gmail.com">
+        <createTable schemaName="spring_security" tableName="user_role_link">
+            <column name="user_id" type="BIGINT">
+                <constraints foreignKeyName="fk_user"
+                             referencedTableSchemaName="spring_security"
+                             referencedTableName="user"
+                             referencedColumnNames="user_id"
+                             nullable="false"/>
+            </column>
+            <column name="role_id" type="BIGINT">
+                <constraints foreignKeyName="fk_role"
+                             referencedTableSchemaName="spring_security"
+                             referencedTableName="role"
+                             referencedColumnNames="role_id"
+                             nullable="false"/>
+            </column>
+        </createTable>
+        <addPrimaryKey schemaName="spring_security" tableName="user_role_link" columnNames="user_id,role_id"/>
+
+        <rollback>
+            <dropTable schemaName="spring_security" tableName="user_role_link" cascadeConstraints="true"/>
+        </rollback>
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+      https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+    <changeSet id="data.spring-security.1647750753" author="dmitryrakovets@gmail.com">
+        <loadData file="src/main/resources/db/data/spring-security-user.csv"
+                  separator=";"
+                  schemaName="spring_security"
+                  tableName="user"/>
+
+        <rollback>
+            <delete schemaName="spring_security" tableName="user">
+                <where>true</where>
+            </delete>
+        </rollback>
+    </changeSet>
+
+    <changeSet id="data.spring-security.1647751208" author="dmitryrakovets@gmail.com">
+        <loadData file="src/main/resources/db/data/spring-security-role.csv"
+                  separator=";"
+                  schemaName="spring_security"
+                  tableName="role"/>
+
+        <rollback>
+            <delete schemaName="spring_security" tableName="role">
+                <where>true</where>
+            </delete>
+        </rollback>
+    </changeSet>
+
+    <changeSet id="data.spring-security.1647751213" author="dmitryrakovets@gmail.com">
+        <loadData file="src/main/resources/db/data/spring-security-user-role-link.csv"
+                  separator=";"
+                  schemaName="spring_security"
+                  tableName="user_role_link"/>
+
+        <rollback>
+            <delete schemaName="spring_security" tableName="user_role_link">
+                <where>true</where>
+            </delete>
+        </rollback>
+    </changeSet>
+</databaseChangeLog>

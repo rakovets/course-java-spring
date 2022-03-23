@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+</head>
+<body>
+<form th:action="@{/registration}" method="post">
+    <label for="username">Custom username: </label>
+    <input type="text" name="username" id="username">
+    <br>
+    <label for="password">Custom password: </label>
+    <input type="password" name="password" id="password">
+    <br>
+    <label name="role">Role:
+        <select name="roleId">
+            <option th:each="role : ${roles}" th:value="${role.getId()}" th:text="${role.getName()}"></option>
+        </select>
+    </label>
+    <br>
+    <button type="submit">Sign up</button>
+</form>
+</body>
+</html>

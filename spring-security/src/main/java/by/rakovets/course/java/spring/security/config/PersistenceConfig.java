@@ -30,10 +30,10 @@ public class PersistenceConfig {
     @Value("${jdbc.password}")
     private String password;
 
+    @Value("${hibernate.default_schema}")
+    private String defaultSchema;
     @Value("${hibernate.dialect}")
     private String dialect;
-    @Value("${hibernate.show_sql}")
-    private String showSql;
     @Value("${hibernate.format_sql}")
     private String formatSql;
     @Value("${hibernate.creation_policy}")
@@ -61,8 +61,8 @@ public class PersistenceConfig {
     @Bean
     public Properties hibernateProperties() {
         Properties properties = new Properties();
+        properties.setProperty("hibernate.default_schema", defaultSchema);
         properties.setProperty("hibernate.dialect", dialect);
-        properties.setProperty("hibernate.show_sql", showSql);
         properties.setProperty("hibernate.format_sql", formatSql);
         properties.setProperty("hibernate.hbm2ddl.auto", creationPolicy);
         return properties;

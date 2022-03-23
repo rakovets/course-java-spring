@@ -5,6 +5,7 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.GenericTypeResolver;
 
+import javax.transaction.Transactional;
 import java.util.List;
 
 public class BaseDaoImpl<T> implements BaseDao<T> {
@@ -31,6 +32,7 @@ public class BaseDaoImpl<T> implements BaseDao<T> {
     }
 
     @Override
+    @Transactional
     public List<T> findAll() {
         return sessionFactory
                 .getCurrentSession()

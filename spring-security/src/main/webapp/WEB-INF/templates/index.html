@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Index page</title>
+</head>
+<body>
+Index page
+<ul>
+    <li><a th:href="@{/registration}">Registration page</a></li>
+    <li><a th:href="@{/login}">Login page</a></li>
+    <li><a th:href="@{/home}">Home page for any AUTHENTICATED user</a></li>
+    <li><a th:href="@{/admin}">Admin page only for ADMIN</a></li>
+    <li><a th:href="@{/user}">User page only for USER</a></li>
+    <li><a th:href="@{/logout}">Logout page</a></li>
+</ul>
+</body>
+</html>

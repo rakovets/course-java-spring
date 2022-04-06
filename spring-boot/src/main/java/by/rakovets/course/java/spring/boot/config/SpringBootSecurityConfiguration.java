@@ -20,8 +20,8 @@ public class SpringBootSecurityConfiguration extends WebSecurityConfigurerAdapte
     public void configure(HttpSecurity http) throws Exception {
         http
                 .csrf().disable()
-                .authorizeRequests().anyRequest().authenticated()
+                .formLogin()
                 .and()
-                .httpBasic();
+                .authorizeRequests().anyRequest().authenticated();
     }
 }

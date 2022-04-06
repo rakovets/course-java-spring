@@ -4,7 +4,7 @@ spring:
   datasource:
     username: postgres
     password: 12345678
-    url: jdbc:postgresql://localhost:5432/course_java_spring_boot
+    url: jdbc:postgresql://localhost:5432/course_java_spring
     driver-class-name: org.postgresql.Driver
   jpa:
     open-in-view:

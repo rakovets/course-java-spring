@@ -6,7 +6,7 @@
 
 == Task 2
 
-Подключить  *devtools* и *actuator*
+Подключить *devtools* и *actuator*
 
 == Task 3
 

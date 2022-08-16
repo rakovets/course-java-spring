@@ -16,5 +16,6 @@
 
     <modules>
         <module>rest-service</module>
+        <module>web-service</module>
     </modules>
 </project>

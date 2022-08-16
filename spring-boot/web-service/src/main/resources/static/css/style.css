@@ -1,0 +1,28 @@
+body {
+    font-family: 'DejaVu Sans', sans-serif;
+}
+
+main {
+    padding: 0 10%;
+}
+
+img {
+    float: left;
+    border-radius: 2px;
+    width: 200px;
+    height: auto;
+}
+
+div {
+    float: left;
+}
+
+.info {
+    margin: 2%;
+    width: 65%;
+}
+
+.details {
+    width: 100%;
+    display: none;
+}

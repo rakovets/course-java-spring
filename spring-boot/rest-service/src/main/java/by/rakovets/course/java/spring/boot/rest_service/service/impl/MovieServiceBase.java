@@ -1,8 +1,8 @@
-package by.rakovets.course.java.spring.boot.service.impl;
+package by.rakovets.course.java.spring.boot.rest_service.service.impl;
 
-import by.rakovets.course.java.spring.boot.dal.entity.Movie;
-import by.rakovets.course.java.spring.boot.dal.repository.MovieRepository;
-import by.rakovets.course.java.spring.boot.service.MovieService;
+import by.rakovets.course.java.spring.boot.rest_service.dal.entity.Movie;
+import by.rakovets.course.java.spring.boot.rest_service.dal.repository.MovieRepository;
+import by.rakovets.course.java.spring.boot.rest_service.service.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;

@@ -1,7 +1,7 @@
-package by.rakovets.course.java.spring.boot.controller;
+package by.rakovets.course.java.spring.boot.rest_service.controller;
 
-import by.rakovets.course.java.spring.boot.dal.entity.Movie;
-import by.rakovets.course.java.spring.boot.service.MovieService;
+import by.rakovets.course.java.spring.boot.rest_service.dal.entity.Movie;
+import by.rakovets.course.java.spring.boot.rest_service.service.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

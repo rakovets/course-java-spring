@@ -1,4 +1,4 @@
-package by.rakovets.course.java.spring.boot.dal.entity;
+package by.rakovets.course.java.spring.boot.rest_service.dal.entity;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

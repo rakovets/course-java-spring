@@ -1,4 +1,4 @@
-package by.rakovets.course.java.spring.boot.config;
+package by.rakovets.course.java.spring.boot.rest_service.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
